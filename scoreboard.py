@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 import turtle as t
 ALIGNMENT = 'center'
 FONT = ('Arial', 25, 'normal')
@@ -10,7 +16,7 @@ class Snake_Scoreboard(t.Turtle):
         self.color('white')
         self.penup()
         #t.goto() - make it go to a random x and y location
-        self.goto(0, 270)
+        self.goto(0, 275)
         self.hideturtle()
         self.update_scoreboard()
     def update_scoreboard(self):
@@ -23,3 +29,10 @@ class Snake_Scoreboard(t.Turtle):
         self.score += 1
         self.clear()
         self.update_scoreboard()
+
+
+# In[ ]:
+
+
+
+

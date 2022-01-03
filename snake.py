@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
 import turtle as t
 #constants need to be in all caps
 #starting_pos = [0,1,2]
@@ -44,3 +50,10 @@ class Snake:
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+
+
+# In[ ]:
+
+
+
+

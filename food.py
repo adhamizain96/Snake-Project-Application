@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 import turtle as t
 import random
 
@@ -13,7 +19,14 @@ class Snake_Food(t.Turtle):
         self.speed('fastest')
         self.refresh()
     def refresh(self):   
-        x_rand = random.randint(-280, 280)
-        y_rand = random.randint(-280, 280)
+        x_rand = random.randint(-250, 250)
+        y_rand = random.randint(-250, 250)
         #t.goto() - make it go to a random x and y location
         self.goto(x_rand, y_rand)
+
+
+# In[ ]:
+
+
+
+

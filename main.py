@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[2]:
+
+
 import turtle as t
 from snake import Snake
 from food import Snake_Food
@@ -5,7 +11,7 @@ from scoreboard import Snake_Scoreboard
 import time
 
 screen = t.Screen()
-screen.setup(width = 500, height = 500)
+screen.setup(width = 300, height = 300)
 screen.bgcolor('black')
 screen.title('Snake Game')
 screen.tracer(0)
@@ -29,7 +35,7 @@ while snake_game_on:
         food.refresh()
         snake.extend()
         scoreboard.increase_score()
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    if snake.head.xcor() > 250 or snake.head.xcor() < -250 or snake.head.ycor() > 250 or snake.head.ycor() < -250:
         snake_game_on = False
         scoreboard.game_over()
     for seg in snake.segments:
@@ -40,3 +46,10 @@ while snake_game_on:
             scoreboard.game_over
 
 screen.exitonclick()
+
+
+# In[ ]:
+
+
+
+
